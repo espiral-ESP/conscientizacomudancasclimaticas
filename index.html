@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conscientização sobre mudanças climáticas</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Segoe UI', sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image: url('fundoesp.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:relative;
+}
+
+/* Camada escura sobre a imagem */
+body::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.45);
+}
+
+/* Container principal */
+.container{
+  position:relative;
+  background:white;
+  padding:45px 35px;
+  border-radius:18px;
+  width:90%;
+  max-width:420px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Logo */
+.logo{
+  width:250px;
+  margin:0 auto 38px auto;
+  display:block;
+}
+
+/* Título */
+h1{
+  font-size:22px;
+  margin-bottom:10px;
+  color:#004d74;
+}
+
+/* Texto */
+p{
+  font-size:15px;
+  color:#555;
+  margin-bottom:25px;
+}
+
+/* Botão */
+.button{
+  display:block;
+  background:#004d74;
+  color:#FFFFFF;
+  padding:16px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:16px;
+  transition:all 0.3s ease;
+}
+
+/* Hover */
+.button:hover{
+  background:#004d74;
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Responsivo */
+@media (max-width:480px){
+  .container{
+    padding:35px 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="logo.png" alt="Logo Espiral" class="logo">
+
+  <h1>Conscientização sobre mudanças climáticas</h1>
+  <p>Conscientização sobre mudanças climáticas</p>
+
+  <a class="button" href="conscientizaçãosobremudançasclimaticas.mp4" target="_blank">
+    🎬 Conscientização sobre mudanças climáticas
+  </a>
+
+</div>
+
+</body>
+</html>
